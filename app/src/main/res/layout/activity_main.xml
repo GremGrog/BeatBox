@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recycler_view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/white"
+			android:layout_gravity="bottom"
+			android:orientation="vertical">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="10dp"
+				android:text="@string/playback_speed"
+				android:id="@+id/playback_speed_label"/>
+			<SeekBar
+				android:padding="20dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/seek_bar"/>
+		</LinearLayout>
+	</FrameLayout>
+</layout>
